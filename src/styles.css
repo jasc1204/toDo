@@ -2,12 +2,15 @@ body{
     margin: 0;
     padding: 0;
     display: flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #sidebar{
     width: 400px;
     height: 100vh;
     background-color: rgb(235, 206, 168); 
+    display: flex;
+    flex-direction: column;
 }
 
 #content{
@@ -21,3 +24,27 @@ body{
     flex: 1;
     background-color: aqua;
 }
+
+.project{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.projectElement{
+    background-color: rgb(171, 218, 137);
+    font-size: 30px;
+    flex-basis:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+}
+
+.elementFromList{
+    color:rgb(24, 124, 212);
+}
+
+
