@@ -1,6 +1,8 @@
 export default function form(){
 
-let formElement = document.createElement("form");
+
+  let formElement = document.createElement("form");
+
     function createLabelandType(htmlFor,type,textContent)
     {
         const label = document.createElement("label");
@@ -11,20 +13,11 @@ let formElement = document.createElement("form");
         input.id = htmlFor;
         formElement.append(label,input);
     }
-
-    createLabelandType("title","text","title");
-    createLabelandType("description","text","description");
-    createLabelandType("dueDate","date","dueDate");
-    createLabelandType("priority","text","priority");
-
-    const submitButton = document.createElement("button");
-    submitButton.type = "submit";
-    submitButton.textContent = "save";
-    formElement.appendChild(submitButton);
-    const close = document.createElement("button");
-    close.type = "button";
-    close.textContent = "close";
-    formElement.appendChild(close);
+    // createLabelandType("project","text","Project");
+    // createLabelandType("title","text","Title");
+    // createLabelandType("description","text","Description");
+    // createLabelandType("dueDate","date","DueDate");
+    // createLabelandType("priority","text","Priority");
 
     return formElement;
 }

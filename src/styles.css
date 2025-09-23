@@ -23,12 +23,15 @@ body{
     height: 100vh;
     flex: 1;
     background-color: aqua;
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .project{
     display: flex;
     flex-direction: column;
-    
 }
 
 .projectElement{
@@ -53,8 +56,28 @@ form {
     gap:5px;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 100px;
+    font-size: 50px;
+    width: 500px;
+
+}
+#description{
+    height: 200px;
+}
+
+form input {
+  width: 80%;          /* all inputs stretch 80% of the form width */
+  max-width: 300px;    /* but don’t get too wide */
+  height: 35px;
+  border-radius: 6px;
+  border: 1px solid gray;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+button{
+    display: flex;
+    margin-top: 10px;
+    font-size: 45px;
 }
 
 #addButton{

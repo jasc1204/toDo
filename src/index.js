@@ -7,7 +7,8 @@ import addproject from "./addProject.js";
 
 const projectholder = sideBar();
 const {rightside} = rightSide();
-addproject(projectholder.projectHolder,projectholder.sidebar,rightside,form());
+const forma = form();
+addproject(projectholder.projectHolder,projectholder.sidebar,rightside,forma,projectholder);
 
 
 
